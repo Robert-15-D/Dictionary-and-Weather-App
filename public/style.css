@@ -1,0 +1,180 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap');
+
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #2d3986, #28858b); 
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Container styling */
+.container {
+    max-width: 400px;
+    margin: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 12px;
+    backdrop-filter: blur(10px); 
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Header 1 styling */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+/* Header 2 styling */
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(240, 236, 236, 0.2);
+}
+
+/* General button styling */
+button {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background: #ff6f61; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Menu button styling */
+.menu-btn {
+    font-family: Verdana, sans-serif;
+    background: #FFF2D7;
+    color: #F98866;
+    font-size: 1.7rem; 
+    padding: 18px 35px; 
+    border-radius: 12px; 
+    text-transform: uppercase; 
+    letter-spacing: 1.5px; 
+    transition: all 0.3s ease-in-out;
+}
+
+/* Menu button hover effect */
+.menu-btn:hover {
+    background: #ffeb3b;
+    transform: scale(1.1); 
+}
+
+/* Share button styling */
+.share-btn {
+    display: block; 
+    width: 100%; 
+    margin: 12px 0; 
+    padding: 12px; 
+    font-size: 1.4rem; 
+    font-weight: 600; 
+    background: black; 
+    color: white; 
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Share button hover effect */
+.share-btn:hover {
+    background: #333; 
+}
+
+/* Button hover effect */
+button:hover {
+    background: #ff3b2f; 
+    transform: scale(1.05); 
+}
+
+/* Input field styling */
+input {
+    width: 100%; 
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+/* Ensures input fields within .container take full width */
+.container input {
+    display: block;
+    width: 100%; 
+}
+
+/* Result box styling */
+.result-box {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+}
+
+/* Back button styling */
+.back-btn {
+    background: #3498db; 
+}
+
+/* Back button hover effect */
+.back-btn:hover {
+    background: #2980b9; 
+}
+
+/* Class to hide elements */
+.hidden {
+    display: none;
+}
+
+/* Error message styling */
+.error {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}

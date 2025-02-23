@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary & Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Menu -->
+    <div id="main-menu" class="container fade-in">
+        <h1>Your Word & Weather Guide</h1>
+        <button class="menu-btn" onclick="showDictionary()">📖 Dictionary</button>
+        <button class="menu-btn" onclick="showWeather()">☁️ Weather</button>
+    </div>
+
+    <!-- Dictionary Section -->
+    <div id="dictionary" class="container hidden fade-in">
+        <h2>Discover Words</h2>
+        <input type="text" id="wordInput" placeholder="Enter a word...">
+        <button onclick="fetchDefinition()">Get Definition</button>
+        <p id="error" class="error"></p>
+        <div id="definition" class="result-box"></div>
+        <button id="twitterShareDictionary" class="share-btn hidden" onclick="shareOnTwitterDictionary()"> Share on X </button>
+        <button class="back-btn" onclick="goBack()">⬅ Back</button>
+    </div>
+
+    <!-- Weather Section -->
+    <div id="weather" class="container hidden fade-in">
+        <h2>Weather Update</h2>
+        <input type="text" id="cityInput" placeholder="Enter a city...">
+        <button onclick="fetchWeather()">Get Weather</button>
+        <p id="weatherError" class="error"></p>
+        <div id="weatherResult" class="result-box"></div>
+        <button id="twitterShareWeather" class="share-btn hidden" onclick="shareOnTwitterWeather()"> Share on X  </button>
+        <button class="back-btn" onclick="goBack()">⬅ Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
