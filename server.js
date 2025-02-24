@@ -4,10 +4,10 @@ dotenv.config();
 
 import express from 'express';
 import cors from 'cors';
-import fetch from 'node-fetch';  // Or 'import fetch from 'node-fetch';' if using ES module
+import fetch from 'node-fetch'; 
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import path from 'path';  // Import the path module
+import path from 'path';
 
 // Fix __dirname in ESM 
 const __filename = fileURLToPath(import.meta.url);
